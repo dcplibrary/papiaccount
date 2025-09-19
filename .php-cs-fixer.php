@@ -1,13 +1,15 @@
 <?php
 
-\$finder = PhpCsFixer\Finder::create()
+    use PhpCsFixer\Finder;
+
+    $finder = Finder::create()
     ->in(__DIR__ . '/src')
     ->name('*.php')
     ->notName('*.blade.php')
     ->ignoreDotFiles(true)
     ->ignoreVCS(true);
 
-return (new PhpCsFixer\Config())
+    return (new PhpCsFixer\Config())
     ->setRules([
         '@PSR12' => true,
         'array_syntax' => ['syntax' => 'short'],
@@ -28,4 +30,4 @@ return (new PhpCsFixer\Config())
             'keep_multiple_spaces_after_comma' => true,
         ],
     ])
-    ->setFinder(\$finder);
+    ->setFinder($finder);
