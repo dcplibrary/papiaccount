@@ -1,6 +1,6 @@
 # PAPIAccount
 
-[![CI](https://github.com/dcplibrary/papiaccount/actions/workflows/ci.yml/badge.svg)](https://github.com/dcplibrary/papiaccount/actions/workflows/ci.yml)
+[![Lint Code Base](https://github.com/dcplibrary/papiaccount/actions/workflows/super-linter.yml/badge.svg)](https://github.com/dcplibrary/papiaccount/actions/workflows/super-linter.yml)
 [![Code Quality](https://github.com/dcplibrary/papiaccount/actions/workflows/code-quality.yml/badge.svg)](https://github.com/dcplibrary/papiaccount/actions/workflows/code-quality.yml)
 [![Latest Stable Version](https://poser.pugx.org/dcplibrary/papiaccount/v/stable)](https://packagist.org/packages/dcplibrary/papiaccount)
 [![License](https://poser.pugx.org/dcplibrary/papiaccount/license)](https://packagist.org/packages/dcplibrary/papiaccount)
