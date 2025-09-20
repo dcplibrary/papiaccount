@@ -1,6 +1,6 @@
 <?php
 
-\$finder = PhpCsFixer\Finder::create()
+$finder = PhpCsFixer\Finder::create()
     ->in(__DIR__ . '/src')
     ->name('*.php')
     ->notName('*.blade.php')
@@ -28,4 +28,4 @@ return (new PhpCsFixer\Config())
             'keep_multiple_spaces_after_comma' => true,
         ],
     ])
-    ->setFinder(\$finder);
+    ->setFinder($finder);
