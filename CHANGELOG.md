@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/dcplibrary/papiaccount/compare/v1.0.0...v1.0.1) (2025-09-20)
+
+### Bug Fixes
+
+* **php-cs-fixer:** fix php-cs-fixer ([40b0ce8](https://github.com/dcplibrary/papiaccount/commit/40b0ce88e3c49c6caeb9d898334c16f7fdccfc6f))
+
 ## 1.0.0 (2025-09-20)
 
 ### Bug Fixes
