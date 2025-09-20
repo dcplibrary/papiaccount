@@ -2,6 +2,7 @@
 
 [![Lint Code Base](https://github.com/dcplibrary/papiaccount/actions/workflows/super-linter.yml/badge.svg)](https://github.com/dcplibrary/papiaccount/actions/workflows/super-linter.yml)
 [![Code Quality](https://github.com/dcplibrary/papiaccount/actions/workflows/code-quality.yml/badge.svg)](https://github.com/dcplibrary/papiaccount/actions/workflows/code-quality.yml)
+[![Semantic-Release](https://github.com/dcplibrary/papiaccount/actions/workflows/release.yml/badge.svg)](https://github.com/dcplibrary/papiaccount/actions/workflows/release.yml)
 [![Latest Stable Version](https://poser.pugx.org/dcplibrary/papiaccount/v/stable)](https://packagist.org/packages/dcplibrary/papiaccount)
 [![License](https://poser.pugx.org/dcplibrary/papiaccount/license)](https://packagist.org/packages/dcplibrary/papiaccount)
 
