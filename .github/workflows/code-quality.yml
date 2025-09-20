@@ -27,7 +27,7 @@ jobs:
     - name: Check code style
       run: |
         if [ -f ".php-cs-fixer.php" ]; then
-          vendor/bin/php-cs-fixer fix --dry-run --diff
+          vendor/bin/php-cs-fixer fix --diff
         else
           echo "No .php-cs-fixer.php found, skipping code style check"
         fi
