@@ -42,13 +42,13 @@ junit.xml
 
 # Composer
 composer.phar
-composer.lock
+# composer.lock
 
 # Node
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-package-lock.json
+# package-lock.json
 
 # Laravel
 /bootstrap/compiled.php
