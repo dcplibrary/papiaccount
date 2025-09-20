@@ -2,8 +2,8 @@
 
 namespace Dcplibrary\PAPIAccount\Tests;
 
-use Orchestra\Testbench\TestCase as Orchestra;
 use Dcplibrary\PAPIAccount\App\Providers\PAPIAccountServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 abstract class TestCase extends Orchestra
 {
@@ -11,7 +11,7 @@ abstract class TestCase extends Orchestra
     {
         parent::setUp();
     }
-    
+
     protected function getPackageProviders($app): array
     {
         return [

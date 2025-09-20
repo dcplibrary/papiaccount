@@ -1,11 +1,11 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use Dcplibrary\PAPIAccount\App\Http\Controllers\PAPIAccountController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
-| PAPIAccount Routes  
+| PAPIAccount Routes
 |--------------------------------------------------------------------------
 */
 
