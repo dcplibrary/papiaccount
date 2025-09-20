@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::group([
-    'prefix' => 'papiaccount',
+    'prefix'     => 'papiaccount',
     'middleware' => ['web'],
 ], function () {
     Route::get('/index', [PAPIAccountController::class, 'index'])->name('papiaccount.index');
