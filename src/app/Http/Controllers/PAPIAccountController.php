@@ -1,0 +1,17 @@
+<?php
+
+namespace Dcplibrary\PAPIAccount\App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
+
+class PAPIAccountController extends Controller
+{
+    /**
+     * Display the PAPIAccount index page.
+     */
+    public function index()
+    {
+        return view('papiaccount::index');
+    }
+}
