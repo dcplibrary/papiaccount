@@ -2,7 +2,7 @@
 
 namespace Dcplibrary\PAPIAccount\App\Concerns;
 
-use App\Http\Controllers\Patron;
+use Dcplibrary\PAPIAccount\App\Http\Controllers\Patron;
 
 trait ViewConcerns
 {

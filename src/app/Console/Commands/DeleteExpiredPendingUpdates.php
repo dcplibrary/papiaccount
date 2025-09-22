@@ -2,9 +2,9 @@
 
     namespace App\Console\Commands;
 
-    use Illuminate\Console\Command;
-    use App\Models\PendingUpdate;
     use Carbon\Carbon;
+    use Dcplibrary\PAPIAccount\App\Models\PendingUpdate;
+    use Illuminate\Console\Command;
 
     class DeleteExpiredPendingUpdates extends Command
     {

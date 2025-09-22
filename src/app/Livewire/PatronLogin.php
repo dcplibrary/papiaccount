@@ -2,7 +2,7 @@
 
 namespace Dcplibrary\PAPIAccount\App\Livewire;
 
-use App\Http\Controllers\Patron;
+use Dcplibrary\PAPIAccount\App\Http\Controllers\Patron;
 use Dcplibrary\PAPIAccount\App\Livewire\Forms\PatronForm;
 use Illuminate\Contracts\View\View;
 use Livewire\Component;

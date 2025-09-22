@@ -16,7 +16,7 @@ class AccessSecret
     public function handle(Request $request, Closure $next): Response
     {
         // Check if AccessSecret exists in session
-        if (!session('AccessSecret')) {
+        if (! session('AccessSecret')) {
             // Redirect to root path if AccessSecret is null or doesn't exist
             return redirect('/');
         }

@@ -1,65 +1,66 @@
 <?php
 
-    namespace App\Console\Commands;
+namespace Dcplibrary\PAPIAccount\App\Console\Commands;
 
-    use App\Services\PAPIPatronUdfsFetcher;
-    use Illuminate\Console\Command;
+use Dcplibrary\PAPIAccount\App\Services\PAPIPatronUdfsFetcher;
+use Illuminate\Console\Command;
 
-    class UpdatePatronUdfs extends Command
+class UpdatePatronUdfs extends Command
+{
+    /**
+     * The name and signature of the console command.
+     *
+     * @var string
+     */
+    protected $signature = 'papi:fetch-patronudfs';
+
+    /**
+     * The console command description.
+     *
+     * @var string
+     */
+    protected $description = 'Fetches data from an external API and populates the database.';
+
+    /**
+     * The PAPIPatronUdfsDataFetcher service instance.
+     *
+     * @var PAPIPatronUdfsFetcher
+     */
+    protected $papiDataFetcher;
+
+    /**
+     * Create a new command instance.
+     *
+     * The service is injected automatically by Laravel's service container.
+     *
+     * @param  PAPIPatronUdfsFetcher  $papiDataFetcher
+     * @return void
+     */
+    public function __construct(PAPIPatronUdfsFetcher $papiDataFetcher)
     {
-        /**
-         * The name and signature of the console command.
-         *
-         * @var string
-         */
-        protected $signature = 'papi:fetch-patronudfs';
+        parent::__construct();
+        $this->papiDataFetcher = $papiDataFetcher;
+    }
 
-        /**
-         * The console command description.
-         *
-         * @var string
-         */
-        protected $description = 'Fetches data from an external API and populates the database.';
+    /**
+     * Execute the console command.
+     */
+    public function handle()
+    {
+        $this->info('Starting data fetch from external API...');
 
-        /**
-         * The PAPIPatronUdfsDataFetcher service instance.
-         *
-         * @var PAPIPatronUdfsFetcher
-         */
-        protected $papiDataFetcher;
+        try {
+            $this->papiDataFetcher->fetchAndPopulate();
 
-        /**
-         * Create a new command instance.
-         *
-         * The service is injected automatically by Laravel's service container.
-         *
-         * @param  PAPIPatronUdfsFetcher  $papiDataFetcher
-         * @return void
-         */
-        public function __construct(PAPIPatronUdfsFetcher $papiDataFetcher)
-        {
-            parent::__construct();
-            $this->papiDataFetcher = $papiDataFetcher;
-        }
+            $this->info("Successfully imported Patron Codes from Polaris.");
 
-        /**
-         * Execute the console command.
-         */
-        public function handle()
-        {
-            $this->info('Starting data fetch from external API...');
+            return Command::SUCCESS;
 
-             try {
-                $this->papiDataFetcher->fetchAndPopulate();
+        } catch (\Exception $e) {
+            $this->error('An error occurred during the operation:');
+            $this->error($e->getMessage());
 
-                $this->info("Successfully imported Patron Codes from Polaris.");
-
-                return Command::SUCCESS;
-
-            } catch (\Exception $e) {
-                $this->error('An error occurred during the operation:');
-                $this->error($e->getMessage());
-                return Command::FAILURE;
-            }
+            return Command::FAILURE;
         }
     }
+}

@@ -2,6 +2,10 @@
 
 namespace Dcplibrary\PAPIAccount\App\Providers;
 
+use Blashbrook\PAPIForms\App\Console\Commands\RunSeeders;
+use Blashbrook\PAPIForms\App\Console\Commands\UpdatePatronCodes;
+use Blashbrook\PAPIForms\App\Console\Commands\UpdatePatronStatCodes;
+use Blashbrook\PAPIForms\App\Console\Commands\UpdatePatronUdfs;
 use Dcplibrary\PAPIAccount\App\Livewire\PatronContact;
 use Dcplibrary\PAPIAccount\App\Livewire\PatronDashboard;
 use Dcplibrary\PAPIAccount\App\Livewire\PatronInformation;
@@ -62,7 +66,13 @@ class PAPIAccountServiceProvider extends ServiceProvider
         Livewire::component('patron.login', PatronLogin::class);
         Livewire::component('patron.notifications', PatronNotifications::class);
         Livewire::component('patron.renew', PatronRenew::class);
-        Livewire::component('testing', Test::class);
+
+        // Registering package commands.
+        $this->commands([
+            UpdatePatronCodes::class,
+            UpdatePatronUdfs::class,
+           // UpdatePatronStatCodes::class,
+        ]);
 
     }
 }

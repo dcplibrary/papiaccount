@@ -1,16 +1,14 @@
 <?php
 
-    namespace App\Models;
+namespace Dcplibrary\PAPIAccount\App\Models;
 
-    use Illuminate\Database\Eloquent\Factories\HasFactory;
-    use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Model;
 
-    class PatronCode extends Model
-    {
-        use HasFactory;
+class PatronCode extends Model
+{
+    protected $fillable = [
+        'PatronCodeID',
+        'Description',
+    ];
 
-        protected $fillable = [
-            'PatronCodeID',
-            'Description',
-        ];
-    }
+}
