@@ -1,9 +1,10 @@
 <?php
 
+use Dcplibrary\PAPIAccount\App\Http\Middleware\AccessSecret;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
-use Illuminate\Http\Request;
 use Illuminate\Foundation\Configuration\Middleware;
+use Illuminate\Http\Request;
 
 return Application::configure(basePath: dirname(__DIR__))
     ->withRouting(
@@ -13,13 +14,15 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware): void {
         $middleware->alias([
-            'access.secret' => \App\Http\Middleware\AccessSecret::class,
+            'access.secret' => AccessSecret::class,
         ]);
-        $middleware->trustProxies(at:'*',
+        $middleware->trustProxies(
+            at:'*',
             headers: Request::HEADER_X_FORWARDED_FOR |
             Request::HEADER_X_FORWARDED_HOST |
             Request::HEADER_X_FORWARDED_PORT |
-            Request::HEADER_X_FORWARDED_PROTO);
+            Request::HEADER_X_FORWARDED_PROTO
+        );
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //

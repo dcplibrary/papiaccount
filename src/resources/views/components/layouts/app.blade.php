@@ -17,8 +17,7 @@
     @fluxAppearance
 </head>
 <body class="min-h-screen bg-white dark:bg-zinc-800 flex">
-<x-papiaccount::sidebar/>
-<x-papiaccount::header/>
+
     {{ $slot }}
 
 @fluxScripts

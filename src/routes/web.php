@@ -2,10 +2,8 @@
 
 use Dcplibrary\PAPIAccount\App\Http\Controllers\PAPIAccountController;
 use Dcplibrary\PAPIAccount\App\Livewire\PatronDashboard;
-use Dcplibrary\PAPIAccount\App\Livewire\PatronInformation;
-use Dcplibrary\PAPIAccount\App\Livewire\PatronRenew;
-    use Dcplibrary\PAPIAccount\App\Livewire\Test;
-    use Illuminate\Support\Facades\Route;
+use Dcplibrary\PAPIAccount\App\Livewire\PatronLogin;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +19,4 @@ Route::group([
 
 Route::get('dashboard', PatronDashboard::class);
 Route::get('dashboard/{view}', PatronDashboard::class);
+Route::get('login', PatronLogin::class);

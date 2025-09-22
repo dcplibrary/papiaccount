@@ -1,5 +1,6 @@
  <div>
-
+     <x-papiaccount::sidebar/>
+     <x-papiaccount::header/>
         <flux:main container class="flex max-w-xl lg:max-w-3xl h-full">
 
             @if(session('isRenewable'))
