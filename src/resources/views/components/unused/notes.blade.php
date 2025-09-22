@@ -1,0 +1,16 @@
+<flux:text>NonBlockingBranchID: {{ session('NonBlockingBranchID') ?? '' }}</flux:text>
+<flux:text>NonBlockOrgName: {{ session('NonBlockOrgName') ?? '' }}</flux:text>
+<flux:text>NonBlockingUserID: {{ session('NonBlockingUserID') ?? '' }}</flux:text>
+<flux:text>NonBlockUsrName: {{ session('NonBlockUsrName') ?? '' }}</flux:text>
+<flux:text>NonBlockingWorkstationID: {{ session('NonBlockingWorkstationID') ?? '' }}</flux:text>
+<flux:text>DisplayName: {{ session('DisplayName') ?? '' }}</flux:text>
+<flux:text>BlockingBranchID: {{ session('BlockingBranchID') ?? '' }}</flux:text>
+<flux:text>BlockingOrgName: {{ session('BlockingOrgName') ?? '' }}</flux:text>
+<flux:text>BlockingUserID: {{ session('BlockingUserID') ?? '' }}</flux:text>
+<flux:text>BlockingUsrName: {{ session('BlockingUsrName') ?? '' }}</flux:text>
+<flux:text>BlockingWorkstationID: {{ session('BlockingWorkstationID') ?? '' }}</flux:text>
+<flux:text>BlockingWorkstationDisplayName: {{ session('BlockingWorkstationDisplayName') ?? '' }}</flux:text>
+<flux:text>NonBlockingStatusNotes: {{ session('NonBlockingStatusNotes') ?? '' }}</flux:text>
+<flux:text>NonBlockingStatusNoteDate: {{ session('NonBlockingStatusNoteDate') ?? '' }}</flux:text>
+<flux:text>BlockingStatusNotes: {{ session('BlockingStatusNotes') ?? '' }}</flux:text>
+<flux:text>BlockingStatusNoteDate: {{ session('BlockingStatusNoteDate') ?? '' }}</flux:text>
