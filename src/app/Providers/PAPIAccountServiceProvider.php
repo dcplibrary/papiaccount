@@ -60,6 +60,7 @@ class PAPIAccountServiceProvider extends ServiceProvider
             ], 'papiaccount-views');
         }
 
+        // Registering Livewire components
         Livewire::component('patron.dashboard', PatronDashboard::class);
         Livewire::component('patron.information', PatronInformation::class);
         Livewire::component('patron.contact', PatronContact::class);
