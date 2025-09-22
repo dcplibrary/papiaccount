@@ -1,3 +1,9 @@
+## [1.3.0](https://github.com/dcplibrary/papiaccount/compare/v1.2.0...v1.3.0) (2025-09-22)
+
+### Features
+
+* **console:** add papi commands ([134b2aa](https://github.com/dcplibrary/papiaccount/commit/134b2aaa36a7bd8e319ede275cafe8bffc2684ae))
+
 ## [1.2.0](https://github.com/dcplibrary/papiaccount/compare/v1.1.1...v1.2.0) (2025-09-22)
 
 ### Features
