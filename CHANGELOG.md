@@ -1,3 +1,9 @@
+## [1.3.2](https://github.com/dcplibrary/papiaccount/compare/v1.3.1...v1.3.2) (2025-09-22)
+
+### Bug Fixes
+
+* **login:** move header and sidebar to patron dashboard ([5641024](https://github.com/dcplibrary/papiaccount/commit/5641024df912c1e2b40bfd76ee48754ae5c2eca9))
+
 ## [1.3.1](https://github.com/dcplibrary/papiaccount/compare/v1.3.0...v1.3.1) (2025-09-22)
 
 ### Bug Fixes
