@@ -19,11 +19,5 @@ Route::group([
     Route::get('/index', [PAPIAccountController::class, 'index'])->name('index');
 });
 
-Route::get('/test', function () {
-    return view('papiaccount::test');
-});
-
 Route::get('dashboard', PatronDashboard::class);
-Route::get('information', PatronInformation::class);
-Route::get('renew', PatronRenew::class);
 Route::get('dashboard/{view}', PatronDashboard::class);
