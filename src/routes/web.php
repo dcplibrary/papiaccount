@@ -1,12 +1,7 @@
 <?php
 
 use Dcplibrary\PAPIAccount\App\Http\Controllers\PAPIAccountController;
-<<<<<<< HEAD
 use Dcplibrary\PAPIAccount\App\Livewire\{PatronDashboard,PatronLogin};
-=======
-use Dcplibrary\PAPIAccount\App\Livewire\PatronDashboard;
-use Dcplibrary\PAPIAccount\App\Livewire\PatronLogin;
->>>>>>> 981a538d2b1fb2a35bf33724c384ffcb9b0f8289
 use Illuminate\Support\Facades\Route;
 
 /*
