@@ -2,6 +2,9 @@
 
         <flux:main container class="flex max-w-xl lg:max-w-3xl h-full">
 
+            <x-papiaccount::sidebar/>
+            <x-papiaccount::header/>
+
             @if(session('isRenewable'))
                 <flux:callout icon="clock">
                     <flux:callout.heading>Upcoming maintenance</flux:callout.heading>

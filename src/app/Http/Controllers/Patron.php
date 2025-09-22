@@ -3,6 +3,7 @@
 namespace Dcplibrary\PAPIAccount\App\Http\Controllers;
 
 use Blashbrook\PAPIClient\PAPIClient;
+use Dcplibrary\PAPIAccount\App\Livewire\Forms\PatronForm;
 use Dcplibrary\PAPIAccount\App\Mail\Patron\RenewConfirmationMailable;
 use Dcplibrary\PAPIAccount\App\Mail\Staff\RenewConfirmationStaffMailable;
 use GuzzleHttp\Exception\GuzzleException;
@@ -16,6 +17,9 @@ use JsonException;
 //@TODO: add mail function for when account is changed
 class Patron extends Controller
 {
+    public PAPIClient $papiclient;
+    public PatronForm $form;
+
     /**
      * @param $barcode
      * @param $password
@@ -23,16 +27,20 @@ class Patron extends Controller
      * @throws GuzzleException
      * @throws JsonException
      */
-    public static function auth($barcode, $password)
+    public static function auth(PAPIClient $papiclient, $barcode, $password)
     {
         $json = [
             "Barcode" => $barcode,
             "Password" => $password,
         ];
-        $response = PAPIClient::publicRequest('POST', 'authenticator/patron', $json);
-        $body = json_decode($response->getBody(), true, 512, JSON_THROW_ON_ERROR);
-
-        return $body['AccessSecret'];
+        dd($json);
+        $response = $this->papiclient
+                    ->method('post')
+                    ->uri('authenticator/patron')
+                    ->params($json)
+                    ->execRequest();
+        return $response['AccessSecret'];
+        dd($response);
     }
 
     /**
