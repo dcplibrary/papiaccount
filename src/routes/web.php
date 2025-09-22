@@ -23,4 +23,5 @@ Route::group([
 
 Route::get('dashboard', PatronDashboard::class);
 Route::get('dashboard/{view}', PatronDashboard::class);
+Route::get('login', PatronLogin::class);
 
