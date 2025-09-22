@@ -1,3 +1,9 @@
+## [1.3.1](https://github.com/dcplibrary/papiaccount/compare/v1.3.0...v1.3.1) (2025-09-22)
+
+### Bug Fixes
+
+* **login:** fix login blade ([06f78ee](https://github.com/dcplibrary/papiaccount/commit/06f78ee3823842f26e132f6ecefb50e7d64cbc9c))
+
 ## [1.3.0](https://github.com/dcplibrary/papiaccount/compare/v1.2.0...v1.3.0) (2025-09-22)
 
 ### Features
