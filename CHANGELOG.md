@@ -1,3 +1,9 @@
+## [1.2.0](https://github.com/dcplibrary/papiaccount/compare/v1.1.1...v1.2.0) (2025-09-22)
+
+### Features
+
+* **commands:** add patroncode and patronudf commands ([96eaba3](https://github.com/dcplibrary/papiaccount/commit/96eaba3799ae2d29d9afe9bbb6b22b8eaa36d3c6))
+
 ## [1.1.1](https://github.com/dcplibrary/papiaccount/compare/v1.1.0...v1.1.1) (2025-09-22)
 
 ### Bug Fixes
