@@ -1,3 +1,9 @@
+## [1.1.1](https://github.com/dcplibrary/papiaccount/compare/v1.1.0...v1.1.1) (2025-09-22)
+
+### Bug Fixes
+
+* **layout.app:** add flex to body class ([aeb7d25](https://github.com/dcplibrary/papiaccount/commit/aeb7d256b03662675ad356ed9d8b1806a8dc4af2))
+
 ## [1.1.0](https://github.com/dcplibrary/papiaccount/compare/v1.0.1...v1.1.0) (2025-09-22)
 
 ### Features
