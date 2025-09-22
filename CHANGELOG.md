@@ -1,3 +1,9 @@
+## [1.3.3](https://github.com/dcplibrary/papiaccount/compare/v1.3.2...v1.3.3) (2025-09-22)
+
+### Bug Fixes
+
+* **web:** fix route/web ([c57820f](https://github.com/dcplibrary/papiaccount/commit/c57820fb42b6407de53993c61f8b21941d1e6aad))
+
 ## [1.3.2](https://github.com/dcplibrary/papiaccount/compare/v1.3.1...v1.3.2) (2025-09-22)
 
 ### Bug Fixes
