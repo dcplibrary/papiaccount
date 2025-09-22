@@ -1,3 +1,9 @@
+## [1.1.0](https://github.com/dcplibrary/papiaccount/compare/v1.0.1...v1.1.0) (2025-09-22)
+
+### Features
+
+* **views:** add livewire components and views ([3044e83](https://github.com/dcplibrary/papiaccount/commit/3044e834e38f5b5fcfccc89b824136adb05831e8))
+
 ## [1.0.1](https://github.com/dcplibrary/papiaccount/compare/v1.0.0...v1.0.1) (2025-09-20)
 
 ### Bug Fixes
