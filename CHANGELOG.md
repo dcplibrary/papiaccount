@@ -1,3 +1,9 @@
+## [1.3.4](https://github.com/dcplibrary/papiaccount/compare/v1.3.3...v1.3.4) (2025-09-23)
+
+### Bug Fixes
+
+* **papiaccountcontroller:** update ([c77fc54](https://github.com/dcplibrary/papiaccount/commit/c77fc5482d957e243cf69a4efd924ade01f247fa))
+
 ## [1.3.3](https://github.com/dcplibrary/papiaccount/compare/v1.3.2...v1.3.3) (2025-09-22)
 
 ### Bug Fixes
