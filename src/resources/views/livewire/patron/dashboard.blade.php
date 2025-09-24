@@ -1,6 +1,8 @@
 <div class="flex w-full min-h-screen">
-    <x-papiaccount::sidebar/>
+
     <x-papiaccount::header/>
+    <x-papiaccount::sidebar/>
+
     <flux:main container class="max-w-xl lg:max-w-3xl">
         @if(session('isRenewable'))
             <flux:callout icon="clock">
