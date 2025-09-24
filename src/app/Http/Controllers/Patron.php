@@ -21,9 +21,6 @@ class Patron extends Controller
     public PAPIClient $papiclient;
     public PatronForm $form;
 
-
-
-
     /**
      * @throws GuzzleException
      * @throws JsonException
@@ -38,9 +35,11 @@ class Patron extends Controller
 
     /**
      * @param $json
-     * @return mixed
+     *
      * @throws GuzzleException
      * @throws JsonException
+     *
+     * @return mixed
      */
     public static function save($json)
     {
@@ -52,6 +51,7 @@ class Patron extends Controller
 
     /**
      * @param $photo
+     *
      * @return void
      */
     public static function savePhoto($photo)
@@ -71,6 +71,7 @@ class Patron extends Controller
 
     /**
      * @param $file
+     *
      * @return string
      */
     private static function setFileName($file)
@@ -78,7 +79,7 @@ class Patron extends Controller
         $fileExt = $file->getClientOriginalExtension();
 
         return sprintf(
-            "%s_%s_%s.%s",
+            '%s_%s_%s.%s',
             session('NameLast'),
             session('NameFirst'),
             session('NameMiddle'),
@@ -93,6 +94,6 @@ class Patron extends Controller
     {
         session()->flush();
 
-        return redirect("/");
+        return redirect('/');
     }
 }

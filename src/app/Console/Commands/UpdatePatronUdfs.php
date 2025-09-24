@@ -33,7 +33,8 @@ class UpdatePatronUdfs extends Command
      *
      * The service is injected automatically by Laravel's service container.
      *
-     * @param  PAPIPatronUdfsFetcher  $papiDataFetcher
+     * @param PAPIPatronUdfsFetcher $papiDataFetcher
+     *
      * @return void
      */
     public function __construct(PAPIPatronUdfsFetcher $papiDataFetcher)
@@ -52,10 +53,9 @@ class UpdatePatronUdfs extends Command
         try {
             $this->papiDataFetcher->fetchAndPopulate();
 
-            $this->info("Successfully imported Patron Codes from Polaris.");
+            $this->info('Successfully imported Patron Codes from Polaris.');
 
             return Command::SUCCESS;
-
         } catch (\Exception $e) {
             $this->error('An error occurred during the operation:');
             $this->error($e->getMessage());

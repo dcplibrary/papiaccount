@@ -2,8 +2,8 @@
 
 namespace Dcplibrary\PAPIAccount\App\Livewire;
 
-use Dcplibrary\PAPIAccount\App\Http\Controllers\Patron;
 use Dcplibrary\PAPIAccount\App\Concerns\ViewConcerns;
+use Dcplibrary\PAPIAccount\App\Http\Controllers\Patron;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 
@@ -23,5 +23,4 @@ class PatronRenew extends Component
     {
         return view('papiaccount::livewire.patron.renew');
     }
-
 }

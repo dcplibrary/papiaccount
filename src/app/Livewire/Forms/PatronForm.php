@@ -7,7 +7,6 @@ use Livewire\Form;
 
 class PatronForm extends Form
 {
-
     #[Session(key: 'AccessSecret')]
     public $AccessSecret = '';
 
@@ -188,21 +187,17 @@ class PatronForm extends Form
     #[Session(key: 'photoUploaded')]
     public $photoUploaded = false;
 
-
-
-
-
     public function getPatronCode($id): string
     {
         $patronCodes = [
-            '1' => 'Adult Courtesy',
-            '2' => 'Adult Paid',
-            '3' => 'Adult',
-            '4' => 'Bulk Loan Institutions',
-            '5' => 'Business Use Only',
-            '7' => 'Homebound',
-            '8' => 'ILL',
-            '9' => 'Juvenile Courtesy',
+            '1'  => 'Adult Courtesy',
+            '2'  => 'Adult Paid',
+            '3'  => 'Adult',
+            '4'  => 'Bulk Loan Institutions',
+            '5'  => 'Business Use Only',
+            '7'  => 'Homebound',
+            '8'  => 'ILL',
+            '9'  => 'Juvenile Courtesy',
             '11' => 'Juvenile Paid',
             '13' => 'Juvenile',
             '15' => 'Library Board',

@@ -10,14 +10,17 @@ trait ViewConcerns
     {
         $this->current = 'patron-information';
     }
+
     public function showContact()
     {
         $this->current = 'patron-contact';
     }
+
     public function showNotifications()
     {
         $this->current = 'patron-notifications';
     }
+
     public function showRenew()
     {
         $this->current = 'patron-renew';
@@ -28,5 +31,4 @@ trait ViewConcerns
         session([$key => $value]);
         Patron::edit($key, $value);
     }
-
 }

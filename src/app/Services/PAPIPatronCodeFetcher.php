@@ -14,7 +14,6 @@ class PAPIPatronCodeFetcher
         $this->papiclient = $papiclient;
     }
 
-
     public function fetchAndPopulate(): int
     {
         $papiclient = new PAPIClient();
@@ -23,7 +22,7 @@ class PAPIPatronCodeFetcher
                     ->uri('patroncodes')
                     ->execRequest();
 
-        if (! isset($response['PatronCodesRows']) || ! is_array($response['PatronCodesRows'])) {
+        if (!isset($response['PatronCodesRows']) || !is_array($response['PatronCodesRows'])) {
             throw new \Exception('Invalid API response: PatronCodesRows missing or not an array.');
         }
 
@@ -43,5 +42,4 @@ class PAPIPatronCodeFetcher
 
         return count($apiIds);
     }
-
 }

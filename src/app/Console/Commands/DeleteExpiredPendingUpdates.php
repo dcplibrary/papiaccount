@@ -1,6 +1,6 @@
 <?php
 
-    namespace App\Console\Commands;
+namespace App\Console\Commands;
 
     use Carbon\Carbon;
     use Dcplibrary\PAPIAccount\App\Models\PendingUpdate;
