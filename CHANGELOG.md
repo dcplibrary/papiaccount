@@ -1,3 +1,9 @@
+## [1.4.0](https://github.com/dcplibrary/papiaccount/compare/v1.3.4...v1.4.0) (2025-09-24)
+
+### Features
+
+* **updates:** various fixes and refactors ([337ca50](https://github.com/dcplibrary/papiaccount/commit/337ca50530d9f4ce0886a6232903fd17df668c00))
+
 ## [1.3.4](https://github.com/dcplibrary/papiaccount/compare/v1.3.3...v1.3.4) (2025-09-23)
 
 ### Bug Fixes
