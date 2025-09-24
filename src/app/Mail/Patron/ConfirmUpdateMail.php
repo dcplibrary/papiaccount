@@ -13,6 +13,7 @@ class ConfirmUpdateMail extends Mailable
     use SerializesModels;
 
     protected $token;
+
     /**
      * Create a new message instance.
      */

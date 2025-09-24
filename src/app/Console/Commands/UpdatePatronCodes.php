@@ -35,7 +35,8 @@ class UpdatePatronCodes extends Command
      *
      * The service is injected automatically by Laravel's service container.
      *
-     * @param  PAPIPatronCodeFetcher  $papiDataFetcher
+     * @param PAPIPatronCodeFetcher $papiDataFetcher
+     *
      * @return void
      */
     public function __construct(PAPIPatronCodeFetcher $papiDataFetcher)
@@ -55,7 +56,7 @@ class UpdatePatronCodes extends Command
         // Call the service to perform the core logic.
         $this->papiDataFetcher->fetchAndPopulate('patroncodes');
 
-        $this->info("Successfully imported Patron Codes from Polaris.");
+        $this->info('Successfully imported Patron Codes from Polaris.');
 
         return Command::SUCCESS;
         /*

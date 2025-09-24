@@ -2,8 +2,8 @@
 
 namespace Dcplibrary\PAPIAccount\App\Livewire;
 
-use Dcplibrary\PAPIAccount\App\Models\PendingUpdate;
 use Blashbrook\PAPIClient\PAPIClient;
+use Dcplibrary\PAPIAccount\App\Models\PendingUpdate;
 use Illuminate\Support\Facades\DB;
 use Livewire\Attributes\Url;
 use Livewire\Component;
@@ -19,7 +19,6 @@ use Livewire\Component;
 
 class PatronContactConfirm extends Component
 {
-
     #[Url(as: 'token')]
     public $token;
 
@@ -55,6 +54,7 @@ class PatronContactConfirm extends Component
     {
         $this->papiclient = $papiclient;
     }
+
     public function render()
     {
         return view('papiaccount::livewire.patron.contact-confirm');

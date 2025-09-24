@@ -18,13 +18,13 @@ class PatronNotifications extends Component
             $this->deliveryOptionIDCurrent = $this->deliveryOptionIDChanged;
             $this->update('DeliveryOptionID', $this->deliveryOptionIDCurrent);
         }
-
     }
 
     public function mount()
     {
         $this->deliveryOptionIDChanged = $this->deliveryOptionIDCurrent = session('DeliveryOptionID');
     }
+
     public function render()
     {
         return view('papiaccount::livewire.patron.notifications');

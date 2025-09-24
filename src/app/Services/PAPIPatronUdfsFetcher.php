@@ -22,7 +22,7 @@ class PAPIPatronUdfsFetcher
                     ->uri('patronudfs')
                     ->execRequest();
 
-        if (! isset($response['PatronUdfConfigsRows']) || ! is_array($response['PatronUdfConfigsRows'])) {
+        if (!isset($response['PatronUdfConfigsRows']) || !is_array($response['PatronUdfConfigsRows'])) {
             throw new \Exception('Invalid API response: PatronUdfConfigsRows missing or not an array.');
         }
 
@@ -31,11 +31,11 @@ class PAPIPatronUdfsFetcher
 
         foreach ($apiCodes as $item) {
             PatronUdf::updateOrCreate([
-                'PatronUdfID' => $item['PatronUdfID'],
-                'Label' => $item['Label'],
-                'Display' => $item['Display'],
-                'Values' => $item['Values'],
-                'Required' => $item['Required'],
+                'PatronUdfID'  => $item['PatronUdfID'],
+                'Label'        => $item['Label'],
+                'Display'      => $item['Display'],
+                'Values'       => $item['Values'],
+                'Required'     => $item['Required'],
                 'DefaultValue' => $item['DefaultValue'],
             ]);
             $apiIds[] = $item['PatronUdfID'];
@@ -46,5 +46,4 @@ class PAPIPatronUdfsFetcher
 
         return count($apiIds);
     }
-
 }

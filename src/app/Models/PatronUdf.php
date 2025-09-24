@@ -18,7 +18,7 @@ class PatronUdf extends Model
     protected function casts(): array
     {
         return [
-            'Display' => 'boolean',
+            'Display'  => 'boolean',
             'Required' => 'boolean',
         ];
     }

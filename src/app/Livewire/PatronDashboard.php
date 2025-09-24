@@ -15,7 +15,7 @@ class PatronDashboard extends Component
 
     public function mount($view = 'information')
     {
-        $this->current = 'patron.' . $view;
+        $this->current = 'patron.'.$view;
     }
 
     public function render()

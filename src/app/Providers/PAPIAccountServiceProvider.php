@@ -2,12 +2,12 @@
 
 namespace Dcplibrary\PAPIAccount\App\Providers;
 
-use Dcplibrary\PAPIAccount\App\Livewire\PatronLogin;
 use Blashbrook\PAPIForms\App\Console\Commands\UpdatePatronCodes;
 use Blashbrook\PAPIForms\App\Console\Commands\UpdatePatronUdfs;
 use Dcplibrary\PAPIAccount\App\Livewire\PatronContact;
 use Dcplibrary\PAPIAccount\App\Livewire\PatronDashboard;
 use Dcplibrary\PAPIAccount\App\Livewire\PatronInformation;
+use Dcplibrary\PAPIAccount\App\Livewire\PatronLogin;
 use Dcplibrary\PAPIAccount\App\Livewire\PatronNotifications;
 use Dcplibrary\PAPIAccount\App\Livewire\PatronRenew;
 use Dcplibrary\PAPIAccount\PAPIAccount;
@@ -69,8 +69,7 @@ class PAPIAccountServiceProvider extends ServiceProvider
         $this->commands([
             UpdatePatronCodes::class,
             UpdatePatronUdfs::class,
-           // UpdatePatronStatCodes::class,
+            // UpdatePatronStatCodes::class,
         ]);
-
     }
 }

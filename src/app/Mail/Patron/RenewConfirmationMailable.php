@@ -12,7 +12,6 @@ class RenewConfirmationMailable extends Mailable
     use Queueable;
     use SerializesModels;
 
-
     /**
      * @return Envelope
      */
@@ -23,7 +22,6 @@ class RenewConfirmationMailable extends Mailable
         );
     }
 
-
     /**
      * @return Content
      */
@@ -33,7 +31,6 @@ class RenewConfirmationMailable extends Mailable
             markdown: 'papiaccount::mail.patron.renew-confirmation',
         );
     }
-
 
     /**
      * Get the attachments for the message.
