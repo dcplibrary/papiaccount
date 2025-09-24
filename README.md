@@ -16,8 +16,27 @@ You can install the package via composer:
 ```bash
 composer require dcplibrary/papiaccount
 ```
+**IMPORTANT**
+  
+  The included views require a [Flux UI Pro License](https://fluxui.dev).  However, you can remove the requirement for   livewire/flux from composer.json and edit the views to use Tailwind CSS or any other UI framework.
 
 ## Configuration
+
+Add Middleware to bootstrap/app.php
+````bash
+    ->withMiddleware(function (Middleware $middleware): void {
+        $middleware->alias([
+            'access.secret' => Dcplibrary\PAPIAccount\App\Http\Middleware\AccessSecret::class,
+        ]);
+        $middleware->trustProxies(
+            at:'*',
+            headers: Request::HEADER_X_FORWARDED_FOR |
+            Request::HEADER_X_FORWARDED_HOST |
+            Request::HEADER_X_FORWARDED_PORT |
+            Request::HEADER_X_FORWARDED_PROTO
+        );
+    })
+````
 
 Publish the configuration file:
 
