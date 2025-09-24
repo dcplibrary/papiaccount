@@ -37,7 +37,7 @@ class PatronLogin extends Component
 
     public function render(): View
     {
-        return view('papiaccount::livewire.patron.login');
-              //      ->layout('papiaccount::components.layouts.app');
+        return view('papiaccount::livewire.patron.login')
+                   ->layout('papiaccount::components.layouts.app');
     }
 }

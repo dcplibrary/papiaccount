@@ -16,14 +16,10 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @fluxAppearance
 </head>
-<body class="min-h-screen bg-white dark:bg-zinc-800 flex">
+<body class="min-h-screen bg-white dark:bg-zinc-800">
 
-<x-papiaccount::sidebar/>
-<x-papiaccount::header/>
-<flux:main container class="flex max-w-xl lg:max-w-3xl h-full">
+{{ $slot }}
 
-    {{ $slot }}
-</flux:main>
 @fluxScripts
 </body>
 </html>
