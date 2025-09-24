@@ -1,10 +1,5 @@
  <div>
-     <x-papiaccount::sidebar/>
-     <x-papiaccount::header/>
-        <flux:main container class="flex max-w-xl lg:max-w-3xl h-full">
-
-            <x-papiaccount::sidebar/>
-            <x-papiaccount::header/>
+{{--     <flux:main container class="flex max-w-xl lg:max-w-3xl h-full">--}}
 
             @if(session('isRenewable'))
                 <flux:callout icon="clock">
@@ -17,5 +12,5 @@
             @endif
 
             <livewire:dynamic-component :is="$current" :key="$current" />
-        </flux:main>
+{{--        </flux:main>--}}
     </div>

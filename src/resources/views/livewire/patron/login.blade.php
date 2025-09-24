@@ -1,8 +1,9 @@
-<div class="flex items-center justify-center h-screen">
+<div>
+    <flux:main container class="flex items-center justify-items-center h-screen min-w-[100vw]">
 <flux:card class="bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
         <div class="mr-10 ml-10">
             <x-papiaccount::logo />
-            <form wire:submit="login">
+            <form wire:submit.prevent="login">
                 <div class="mb-6 mt-6">
                     <flux:text size="xl" variant="strong">Log in to your account</flux:text>
                 </div>
@@ -18,5 +19,5 @@
             </form>
         </div>
 
-    </flux:card>
+    </flux:card></flux:main>
 </div>

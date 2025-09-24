@@ -18,7 +18,7 @@ class AccessSecret
         // Check if AccessSecret exists in session
         if (! session('AccessSecret')) {
             // Redirect to root path if AccessSecret is null or doesn't exist
-            return redirect('/');
+            return redirect('/login');
         }
 
         return $next($request);

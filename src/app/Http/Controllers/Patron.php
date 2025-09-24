@@ -2,6 +2,7 @@
 
 namespace Dcplibrary\PAPIAccount\App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use Blashbrook\PAPIClient\PAPIClient;
 use Dcplibrary\PAPIAccount\App\Livewire\Forms\PatronForm;
 use Dcplibrary\PAPIAccount\App\Mail\Patron\RenewConfirmationMailable;
@@ -20,44 +21,8 @@ class Patron extends Controller
     public PAPIClient $papiclient;
     public PatronForm $form;
 
-    /**
-     * @param $barcode
-     * @param $password
-     * @return mixed
-     * @throws GuzzleException
-     * @throws JsonException
-     */
-    public static function auth(PAPIClient $papiclient, $barcode, $password)
-    {
-        $json = [
-            "Barcode" => $barcode,
-            "Password" => $password,
-        ];
-        dd($json);
-        $response = $this->papiclient
-                    ->method('post')
-                    ->uri('authenticator/patron')
-                    ->params($json)
-                    ->execRequest();
-        return $response['AccessSecret'];
-        dd($response);
-    }
 
-    /**
-     * @param $barcode
-     * @param $accessSecret
-     * @return mixed
-     * @throws GuzzleException
-     * @throws JsonException
-     */
-    public static function open($barcode, $accessSecret)
-    {
-        $uri = 'patron/'.$barcode.'/basicdata?addresses=true&notes=true';
-        $response = PAPIClient::authenticatedPatronRequest('GET', $uri, $accessSecret);
-        $body = json_decode($response->getBody(), true, 512, JSON_THROW_ON_ERROR);
 
-        return $body['PatronBasicData'];
-    }
 
     /**
      * @throws GuzzleException

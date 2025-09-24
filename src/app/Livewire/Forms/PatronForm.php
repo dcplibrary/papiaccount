@@ -2,13 +2,11 @@
 
 namespace Dcplibrary\PAPIAccount\App\Livewire\Forms;
 
-use Dcplibrary\PAPIAccount\App\Concerns\DateConcerns;
 use Livewire\Attributes\Session;
 use Livewire\Form;
 
 class PatronForm extends Form
 {
-    use DateConcerns;
 
     #[Session(key: 'AccessSecret')]
     public $AccessSecret = '';
@@ -190,76 +188,9 @@ class PatronForm extends Form
     #[Session(key: 'photoUploaded')]
     public $photoUploaded = false;
 
-    public function setPatronData($basicData): void
-    {
-        $this->PatronID = $basicData['PatronID'];
-        $this->Barcode = $basicData['Barcode'];
-        $this->NameFirst = $basicData['NameFirst'];
-        $this->NameLast = $basicData['NameLast'];
-        $this->NameMiddle = $basicData['NameMiddle'];
-        $this->PhoneVoice1 = $basicData['PhoneNumber'];
-        $this->EmailAddress = $basicData['EmailAddress'];
-        $this->NameSuffix = $basicData['NameSuffix'];
-        $this->Phone1CarrierID = $basicData['Phone1CarrierID'];
-        $this->CellPhone = $basicData['CellPhone'];
-        $this->CellPhoneCarrierID = $basicData['CellPhoneCarrierID'];
-        $this->BirthDate = $this->formatToDateString($basicData['BirthDate']);
-        $this->displayableBirthDate = $this->displayableDate($this->BirthDate);
 
-        $this->RegistrationDate = $this->formatToDateString($basicData['RegistrationDate']);
-        $this->displayableRegistrationDate = $this->displayableDate($this->RegistrationDate);
-        $this->LastActivityDate = $this->formatToDateString($basicData['LastActivityDate']);
-        $this->displayableLastActivityDate = $this->displayableDate($this->LastActivityDate);
-        $this->AddrCheckDate = $this->formatToDateString($basicData['AddrCheckDate']);
-        $this->displayableAddrCheckDate = $this->displayableDate($this->AddrCheckDate);
-        $this->PatronCodeID = $basicData['PatronCodeID'];
-        $this->patronCode = $this->getPatronCode($this->PatronCodeID);
-        $this->DeliveryOptionID = $basicData['DeliveryOptionID'];
-        $this->TxtPhoneNumber = $basicData['TxtPhoneNumber'];
-        $this->ExpirationDate = $this->formatToDateString($basicData['ExpirationDate']);
-        $this->displayableExpirationDate = $this->displayableDate($this->ExpirationDate);
 
-        $this->User1 = $basicData['User1'];
-        $this->User2 = $basicData['User2'];
-        $this->User3 = $basicData['User3'];
-        $this->User4 = $basicData['User4'];
-        $this->User5 = $basicData['User5'];
-        $this->FormerID = $basicData['FormerID'];
-        $this->setPatronAddress($basicData['PatronAddresses'][0]);
-        $this->setPatronNotes($basicData['PatronNotes']);
-    }
 
-    public function setPatronAddress($patronAddress): void
-    {
-        $this->AddressID = $patronAddress['AddressID'];
-        $this->StreetOne = $patronAddress['StreetOne'];
-        $this->StreetTwo = $patronAddress['StreetTwo'];
-        $this->City = $patronAddress['City'];
-        $this->County = $patronAddress['County'];
-        $this->State = $patronAddress['State'];
-        $this->PostalCode = $patronAddress['PostalCode'];
-        $this->Country = $patronAddress['Country'];
-    }
-
-    public function setPatronNotes($patronNotes): void
-    {
-        $this->NonBlockingBranchID = $patronNotes['NonBlockingBranchID'];
-        $this->NonBlockOrgName = $patronNotes['NonBlockOrgName'];
-        $this->NonBlockingUserID = $patronNotes['NonBlockingUserID'];
-        $this->NonBlockUsrName = $patronNotes['NonBlockUsrName'];
-        $this->NonBlockingWorkstationID = $patronNotes['NonBlockingWorkstationID'];
-        $this->DisplayName = $patronNotes['DisplayName'];
-        $this->BlockingBranchID = $patronNotes['BlockingBranchID'];
-        $this->BlockingOrgName = $patronNotes['BlockingOrgName'];
-        $this->BlockingUserID = $patronNotes['BlockingUserID'];
-        $this->BlockingUsrName = $patronNotes['BlockingUsrName'];
-        $this->BlockingWorkstationID = $patronNotes['BlockingWorkstationID'];
-        $this->BlockingWorkstationDisplayName = $patronNotes['BlockingWorkstationDisplayName'];
-        $this->NonBlockingStatusNotes = $patronNotes['NonBlockingStatusNotes'];
-        $this->NonBlockingStatusNoteDate = $patronNotes['NonBlockingStatusNoteDate'];
-        $this->BlockingStatusNotes = $patronNotes['BlockingStatusNotes'];
-        $this->BlockingStatusNoteDate = $patronNotes['BlockingStatusNoteDate'];
-    }
 
     public function getPatronCode($id): string
     {

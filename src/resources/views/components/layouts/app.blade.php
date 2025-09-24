@@ -18,8 +18,12 @@
 </head>
 <body class="min-h-screen bg-white dark:bg-zinc-800 flex">
 
-    {{ $slot }}
+<x-papiaccount::sidebar/>
+<x-papiaccount::header/>
+<flux:main container class="flex max-w-xl lg:max-w-3xl h-full">
 
+    {{ $slot }}
+</flux:main>
 @fluxScripts
 </body>
 </html>

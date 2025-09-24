@@ -9,7 +9,7 @@
             <flux:heading>Name</flux:heading>
         </div>
         <div class="flex-1 align-text-top">
-            <flux:text>{{ session('NameFirst') ?? '' }} {{ session('NameMiddle') ?? '' }} {{ session('NameLast') ?? '' }} {{ session('NameSuffix') ?? '' }}</flux:text>
+            <flux:text>{{ session('NameFirst') ?? 'no' }} {{ session('NameMiddle') ?? '' }} {{ session('NameLast') ?? '' }} {{ session('NameSuffix') ?? '' }}</flux:text>
         </div>
     </div>
 
