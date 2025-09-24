@@ -1,3 +1,12 @@
+## [1.4.1](https://github.com/dcplibrary/papiaccount/compare/v1.4.0...v1.4.1) (2025-09-24)
+
+### Bug Fixes
+
+* **dashboard.blade:** fix dashboard layout ([049e8e6](https://github.com/dcplibrary/papiaccount/commit/049e8e64ec4e232ffc6e6f78332c853c7c043da7))
+* **header:** fix styling ([77e555a](https://github.com/dcplibrary/papiaccount/commit/77e555ac2ce2768e6740ecc5682a952c4e58469d))
+* **header:** make sidebar expand icon appear at top ([5a42328](https://github.com/dcplibrary/papiaccount/commit/5a42328773a29f8db2e7c0e733db3595dd4f2d40))
+* **login:** fix login style ([37f6379](https://github.com/dcplibrary/papiaccount/commit/37f6379d6ff85cc27fdd8b21c65dc88f191c0acd))
+
 ## [1.4.0](https://github.com/dcplibrary/papiaccount/compare/v1.3.4...v1.4.0) (2025-09-24)
 
 ### Features
