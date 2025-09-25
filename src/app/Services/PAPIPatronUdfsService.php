@@ -1,11 +1,16 @@
 <?php
 
+/*
+| Fetches patron udf options used in registration (User1, User2 etc.) from Polaris api
+| and stores the in the local database
+*/
+
 namespace Dcplibrary\PAPIAccount\App\Services;
 
 use Blashbrook\PAPIClient\PAPIClient;
 use Dcplibrary\PAPIAccount\App\Models\PatronUdf;
 
-class PAPIPatronUdfsFetcher
+class PAPIPatronUdfsService
 {
     public PAPIClient $papiclient;
 
@@ -22,7 +27,7 @@ class PAPIPatronUdfsFetcher
                     ->uri('patronudfs')
                     ->execRequest();
 
-        if (!isset($response['PatronUdfConfigsRows']) || !is_array($response['PatronUdfConfigsRows'])) {
+        if (! isset($response['PatronUdfConfigsRows']) || ! is_array($response['PatronUdfConfigsRows'])) {
             throw new \Exception('Invalid API response: PatronUdfConfigsRows missing or not an array.');
         }
 
@@ -31,11 +36,11 @@ class PAPIPatronUdfsFetcher
 
         foreach ($apiCodes as $item) {
             PatronUdf::updateOrCreate([
-                'PatronUdfID'  => $item['PatronUdfID'],
-                'Label'        => $item['Label'],
-                'Display'      => $item['Display'],
-                'Values'       => $item['Values'],
-                'Required'     => $item['Required'],
+                'PatronUdfID' => $item['PatronUdfID'],
+                'Label' => $item['Label'],
+                'Display' => $item['Display'],
+                'Values' => $item['Values'],
+                'Required' => $item['Required'],
                 'DefaultValue' => $item['DefaultValue'],
             ]);
             $apiIds[] = $item['PatronUdfID'];

@@ -2,7 +2,7 @@
 
 namespace Dcplibrary\PAPIAccount\App\Console\Commands;
 
-use Dcplibrary\PAPIAccount\App\Services\PAPIPatronCodeFetcher;
+use Dcplibrary\PAPIAccount\App\Services\PAPIPatronCodeService;
 use Illuminate\Console\Command;
 
 // Import the new service class
@@ -26,7 +26,7 @@ class UpdatePatronCodes extends Command
     /**
      * The ApiDataFetcher service instance.
      *
-     * @var PAPIPatronCodeFetcher
+     * @var PAPIPatronCodeService
      */
     protected $papiDataFetcher;
 
@@ -35,11 +35,11 @@ class UpdatePatronCodes extends Command
      *
      * The service is injected automatically by Laravel's service container.
      *
-     * @param PAPIPatronCodeFetcher $papiDataFetcher
+     * @param PAPIPatronCodeService $papiDataFetcher
      *
      * @return void
      */
-    public function __construct(PAPIPatronCodeFetcher $papiDataFetcher)
+    public function __construct(PAPIPatronCodeService $papiDataFetcher)
     {
         parent::__construct();
         $this->papiDataFetcher = $papiDataFetcher;

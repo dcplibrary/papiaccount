@@ -1,11 +1,15 @@
 <?php
 
+/*
+| Fetches patron codes from Polaris api and stores the in the local database
+*/
+
 namespace Dcplibrary\PAPIAccount\App\Services;
 
 use Blashbrook\PAPIClient\PAPIClient;
 use Dcplibrary\PAPIAccount\App\Models\PatronCode;
 
-class PAPIPatronCodeFetcher
+class PAPIPatronCodeService
 {
     public PAPIClient $papiclient;
 
@@ -22,7 +26,7 @@ class PAPIPatronCodeFetcher
                     ->uri('patroncodes')
                     ->execRequest();
 
-        if (!isset($response['PatronCodesRows']) || !is_array($response['PatronCodesRows'])) {
+        if (! isset($response['PatronCodesRows']) || ! is_array($response['PatronCodesRows'])) {
             throw new \Exception('Invalid API response: PatronCodesRows missing or not an array.');
         }
 

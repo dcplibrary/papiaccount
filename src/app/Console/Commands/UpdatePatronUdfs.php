@@ -2,7 +2,7 @@
 
 namespace Dcplibrary\PAPIAccount\App\Console\Commands;
 
-use Dcplibrary\PAPIAccount\App\Services\PAPIPatronUdfsFetcher;
+use Dcplibrary\PAPIAccount\App\Services\PAPIPatronUdfsService;
 use Illuminate\Console\Command;
 
 class UpdatePatronUdfs extends Command
@@ -24,7 +24,7 @@ class UpdatePatronUdfs extends Command
     /**
      * The PAPIPatronUdfsDataFetcher service instance.
      *
-     * @var PAPIPatronUdfsFetcher
+     * @var PAPIPatronUdfsService
      */
     protected $papiDataFetcher;
 
@@ -33,11 +33,11 @@ class UpdatePatronUdfs extends Command
      *
      * The service is injected automatically by Laravel's service container.
      *
-     * @param PAPIPatronUdfsFetcher $papiDataFetcher
+     * @param PAPIPatronUdfsService $papiDataFetcher
      *
      * @return void
      */
-    public function __construct(PAPIPatronUdfsFetcher $papiDataFetcher)
+    public function __construct(PAPIPatronUdfsService $papiDataFetcher)
     {
         parent::__construct();
         $this->papiDataFetcher = $papiDataFetcher;
