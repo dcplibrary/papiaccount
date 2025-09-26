@@ -1,3 +1,9 @@
+## [1.6.0](https://github.com/dcplibrary/papiaccount/compare/v1.5.1...v1.6.0) (2025-09-26)
+
+### Features
+
+* **papiclient:** move shared functions to papiclient ([8f43ad8](https://github.com/dcplibrary/papiaccount/commit/8f43ad8b450c8518fdf6b8e8adff2fde53a2431c))
+
 ## [1.5.1](https://github.com/dcplibrary/papiaccount/compare/v1.5.0...v1.5.1) (2025-09-26)
 
 ### Bug Fixes
