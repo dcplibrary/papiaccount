@@ -1,3 +1,9 @@
+## [1.5.0](https://github.com/dcplibrary/papiaccount/compare/v1.4.1...v1.5.0) (2025-09-26)
+
+### Features
+
+* **shared:** move shared papi functions to seperate package ([61699f2](https://github.com/dcplibrary/papiaccount/commit/61699f25e86557ba35225b03bd9204d8784926b5))
+
 ## [1.4.1](https://github.com/dcplibrary/papiaccount/compare/v1.4.0...v1.4.1) (2025-09-24)
 
 ### Bug Fixes
