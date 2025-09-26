@@ -7,7 +7,7 @@ use Illuminate\Support\Number;
 
 trait DateConcerns
 {
-    public static function displayableDate($date): string
+    public function displayableDate($date): string
     {
         return Carbon::createFromDate($date)->format('F d, Y');
     }
@@ -36,4 +36,5 @@ trait DateConcerns
     {
         return Carbon::createFromTimestampMs($timestamp)->toDateString();
     }
+
 }
