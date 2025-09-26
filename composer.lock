@@ -4,11 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d384f7d6a82b6719601f5146335545ea",
+    "content-hash": "b10a610434257406dcba0b77380fd063",
     "packages": [
         {
             "name": "blashbrook/papiclient",
-            "version": "dev-dev-master",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../papiclient",
@@ -204,85 +204,6 @@
                 }
             ],
             "time": "2024-02-09T16:56:22+00:00"
-        },
-        {
-            "name": "dcplibrary/papishared",
-            "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "../papishared",
-                "reference": "44f845ede3981fca8325e060da5b616146d00887"
-            },
-            "require": {
-                "blashbrook/papiclient": "dev-dev-master",
-                "illuminate/support": "^9.0||^10.0||^11.0||^12.0",
-                "php": "^8.1"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.0",
-                "larastan/larastan": "^2.0",
-                "mockery/mockery": "^1.6",
-                "orchestra/testbench": "^9.0||^10.0",
-                "phpstan/phpstan": "^1.0",
-                "phpunit/phpunit": "^10.0||^11.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "1.0.x-dev"
-                },
-                "laravel": {
-                    "providers": [
-                        "Dcplibrary\\PAPIShared\\App\\Providers\\PAPISharedServiceProvider"
-                    ],
-                    "aliases": {
-                        "PAPIShared": "Dcplibrary\\PAPIShared\\Facades\\PAPIShared"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Dcplibrary\\PAPIShared\\": "src/",
-                    "Dcplibrary\\PAPIShared\\App\\": "src/app"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "Dcplibrary\\PAPIShared\\Tests\\": "src/tests/"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "phpunit"
-                ],
-                "format": [
-                    "php-cs-fixer fix"
-                ],
-                "analyse": [
-                    "phpstan analyse"
-                ]
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Brian Lashbrook",
-                    "email": "blashbrook@dcplibrary.org"
-                }
-            ],
-            "description": "Laravel package for PAPIShared",
-            "homepage": "https://www.dcplibrary.org",
-            "keywords": [
-                "account",
-                "laravel",
-                "package",
-                "papi"
-            ],
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
         },
         {
             "name": "dflydev/dot-access-data",
@@ -10818,8 +10739,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "blashbrook/papiclient": 20,
-        "dcplibrary/papishared": 20
+        "blashbrook/papiclient": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
