@@ -1,6 +1,6 @@
 <?php
 
-namespace Dcplibrary\PAPIAccount\App\Models;
+namespace Dcplibrary\PAPIAccount\App\Modelz;
 
 use Illuminate\Database\Eloquent\Model;
 

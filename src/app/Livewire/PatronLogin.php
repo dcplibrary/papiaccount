@@ -6,7 +6,7 @@ use Blashbrook\PAPIClient\PAPIClient;
 use Dcplibrary\PAPIAccount\App\Concerns\PatronAccountConcerns;
 use Dcplibrary\PAPIAccount\App\Livewire\Forms\PatronForm;
 
-use Dcplibrary\PAPIShared\App\Concerns\DateConcerns;
+use Dcplibrary\PAPIAccount\App\Concerns\DateConcerns;
 use Illuminate\Contracts\View\View;
 use Livewire\Component;
 

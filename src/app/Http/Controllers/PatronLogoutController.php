@@ -2,14 +2,14 @@
 
 namespace Dcplibrary\PAPIAccount\App\Http\Controllers;
 
-    use App\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 
-    class PatronLogoutController extends Controller
+class PatronLogoutController extends Controller
+{
+    public function __invoke()
     {
-        public function __invoke()
-        {
-            session()->flush();
+        session()->flush();
 
-            return redirect('/');
-        }
+        return redirect('/');
     }
+}

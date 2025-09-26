@@ -39,7 +39,7 @@ class PAPIAccountServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__.'/../../resources/views', 'papiaccount');
 
         // Load package migrations
-        $this->loadMigrationsFrom(__DIR__.'/../../database/Migrations');
+        //$this->loadMigrationsFrom(__DIR__.'/../../database/Migrations');
 
         // Load package config
         $this->mergeConfigFrom(__DIR__.'/../../config/papiaccount.php', 'papiaccount');
@@ -66,10 +66,10 @@ class PAPIAccountServiceProvider extends ServiceProvider
         Livewire::component('patron.renew', PatronRenew::class);
 
         // Registering package commands.
-        $this->commands([
+/*        $this->commands([
             UpdatePatronCodes::class,
             UpdatePatronUdfs::class,
             // UpdatePatronStatCodes::class,
-        ]);
+        ]);*/
     }
 }

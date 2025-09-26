@@ -3,7 +3,7 @@
 namespace Dcplibrary\PAPIAccount\App\Livewire;
 
 use Blashbrook\PAPIClient\PAPIClient;
-use Dcplibrary\PAPIAccount\App\Models\PendingUpdate;
+use Blashbrook\PAPIClient\PendingUpdate;
 use Illuminate\Support\Facades\DB;
 use Livewire\Attributes\Url;
 use Livewire\Component;
