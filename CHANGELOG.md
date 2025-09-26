@@ -1,3 +1,9 @@
+## [1.5.1](https://github.com/dcplibrary/papiaccount/compare/v1.5.0...v1.5.1) (2025-09-26)
+
+### Bug Fixes
+
+* **papishared:** remove papishared package ([11ab42a](https://github.com/dcplibrary/papiaccount/commit/11ab42a2b5fabbd6fb7125297f341ab3cbdd3fbd))
+
 ## [1.5.0](https://github.com/dcplibrary/papiaccount/compare/v1.4.1...v1.5.0) (2025-09-26)
 
 ### Features
