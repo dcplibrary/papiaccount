@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d4ca691add35a7c751ed8c0d9bc05137",
+    "content-hash": "effb8c381becf2cc9bc5bba3f7f9bfcd",
     "packages": [
         {
             "name": "blashbrook/papiclient",
-            "version": "v2.4.4",
+            "version": "v2.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/blashbrook/papiclient.git",
-                "reference": "7f414a5775d02c7c2c9bf56d1da5418547ac7c94"
+                "reference": "c96df49e38cce5cfaf017c75670c118142a5517e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/blashbrook/papiclient/zipball/7f414a5775d02c7c2c9bf56d1da5418547ac7c94",
-                "reference": "7f414a5775d02c7c2c9bf56d1da5418547ac7c94",
+                "url": "https://api.github.com/repos/blashbrook/papiclient/zipball/c96df49e38cce5cfaf017c75670c118142a5517e",
+                "reference": "c96df49e38cce5cfaf017c75670c118142a5517e",
                 "shasum": ""
             },
             "require": {
@@ -78,9 +78,9 @@
             ],
             "support": {
                 "issues": "https://github.com/blashbrook/papiclient/issues",
-                "source": "https://github.com/blashbrook/papiclient/tree/v2.4.4"
+                "source": "https://github.com/blashbrook/papiclient/tree/v2.4.5"
             },
-            "time": "2025-10-02T20:44:59+00:00"
+            "time": "2025-10-02T21:41:24+00:00"
         },
         {
             "name": "brick/math",

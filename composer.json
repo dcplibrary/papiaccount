@@ -2,8 +2,8 @@
   "name": "dcplibrary/papiaccount",
   "require": {
     "php": "^8.3",
-    "livewire/flux": "^2.4",
-    "blashbrook/papiclient": "^2.4.4"
+    "livewire/flux": "^v2.5.0",
+    "blashbrook/papiclient": "^2.4.5"
   },
   "type": "library",
   "description": "Laravel package for PAPIAccount",
