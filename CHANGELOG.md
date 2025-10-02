@@ -1,3 +1,9 @@
+## [1.6.8](https://github.com/dcplibrary/papiaccount/compare/v1.6.7...v1.6.8) (2025-10-02)
+
+### Bug Fixes
+
+* **composer:** update papiclient and flux ([06b1d4e](https://github.com/dcplibrary/papiaccount/commit/06b1d4e3a6abc93890cc20bef1702354e714305a))
+
 ## [1.6.7](https://github.com/dcplibrary/papiaccount/compare/v1.6.6...v1.6.7) (2025-10-02)
 
 ### Bug Fixes
