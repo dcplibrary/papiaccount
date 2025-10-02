@@ -7,8 +7,10 @@ use Blashbrook\PAPIForms\App\Console\Commands\UpdatePatronUdfs;
 use Dcplibrary\PAPIAccount\App\Livewire\PatronContact;
 use Dcplibrary\PAPIAccount\App\Livewire\PatronDashboard;
 use Dcplibrary\PAPIAccount\App\Livewire\PatronInformation;
+use Dcplibrary\PAPIAccount\App\Livewire\PatronLocationTest;
 use Dcplibrary\PAPIAccount\App\Livewire\PatronLogin;
 use Dcplibrary\PAPIAccount\App\Livewire\PatronNotifications;
+use Dcplibrary\PAPIAccount\App\Livewire\PatronNotificationsTest;
 use Dcplibrary\PAPIAccount\App\Livewire\PatronRenew;
 use Dcplibrary\PAPIAccount\PAPIAccount;
 use Illuminate\Support\ServiceProvider;
@@ -63,6 +65,8 @@ class PAPIAccountServiceProvider extends ServiceProvider
         Livewire::component('patron.contact', PatronContact::class);
         Livewire::component('patron.login', PatronLogin::class);
         Livewire::component('patron.notifications', PatronNotifications::class);
+        Livewire::component('notifications-test', PatronNotificationsTest::class);
+        Livewire::component('location-test', PatronLocationTest::class);
         Livewire::component('patron.renew', PatronRenew::class);
 
         // Registering package commands.

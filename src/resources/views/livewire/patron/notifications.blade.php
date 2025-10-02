@@ -18,7 +18,6 @@
                 <flux:radio value="8" label="Text messaging"/>
                 <flux:radio value="1" label="Mail"/>
             </flux:radio.group>
-
         </div>
     </div>
     <flux:modal name="edit-notifications" class="md:w-96" >
