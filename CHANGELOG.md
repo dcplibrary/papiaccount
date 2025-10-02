@@ -1,3 +1,9 @@
+## [1.6.1](https://github.com/dcplibrary/papiaccount/compare/v1.6.0...v1.6.1) (2025-10-02)
+
+### Bug Fixes
+
+* **papiclient:** update papiclient requirement ([bb99235](https://github.com/dcplibrary/papiaccount/commit/bb99235f27b9891101c1e7e72af6be5650be98a0))
+
 ## [1.6.0](https://github.com/dcplibrary/papiaccount/compare/v1.5.1...v1.6.0) (2025-09-26)
 
 ### Features
