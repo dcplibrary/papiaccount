@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d08bc6da85369144902cb971f2926848",
+    "content-hash": "d4ca691add35a7c751ed8c0d9bc05137",
     "packages": [
         {
             "name": "blashbrook/papiclient",
@@ -8034,7 +8034,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.1"
+        "php": "^8.3"
     },
     "platform-dev": {},
     "plugin-api-version": "2.6.0"

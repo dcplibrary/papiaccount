@@ -1,7 +1,7 @@
 {
   "name": "dcplibrary/papiaccount",
   "require": {
-    "php": "^8.1",
+    "php": "^8.3",
     "livewire/flux": "^2.4",
     "blashbrook/papiclient": "^2.4.4"
   },
