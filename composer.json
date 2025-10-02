@@ -40,8 +40,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Dcplibrary\\PAPIAccount\\Tests\\": "src/tests/",
-      "Dcplibrary\\PAPIAccount\\Databases\\": "src/databases/"
+      "Dcplibrary\\PAPIAccount\\Tests\\": "src/tests/"
     }
   },
   "extra": {
