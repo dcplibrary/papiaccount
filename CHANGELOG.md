@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/dcplibrary/papiaccount/compare/v1.6.1...v1.6.2) (2025-10-02)
+
+### Bug Fixes
+
+* **composer:** fix psr-4 loading ([804c3ee](https://github.com/dcplibrary/papiaccount/commit/804c3ee73c4b08c10e7cb38fc009980e90142ea7))
+* **composer:** fix psr-4 loading ([f20c605](https://github.com/dcplibrary/papiaccount/commit/f20c605b5a0d66143f74170ecfa4ea40eec5d16c))
+
 ## [1.6.1](https://github.com/dcplibrary/papiaccount/compare/v1.6.0...v1.6.1) (2025-10-02)
 
 ### Bug Fixes
