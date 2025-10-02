@@ -1,3 +1,9 @@
+## [1.6.5](https://github.com/dcplibrary/papiaccount/compare/v1.6.4...v1.6.5) (2025-10-02)
+
+### Bug Fixes
+
+* **composer:** update psr-4 loading paths ([c0bc722](https://github.com/dcplibrary/papiaccount/commit/c0bc72299ffd16e9c908f530e0b0a9da43ec4730))
+
 ## [1.6.4](https://github.com/dcplibrary/papiaccount/compare/v1.6.3...v1.6.4) (2025-10-02)
 
 ### Bug Fixes
