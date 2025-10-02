@@ -1,3 +1,9 @@
+## [1.6.7](https://github.com/dcplibrary/papiaccount/compare/v1.6.6...v1.6.7) (2025-10-02)
+
+### Bug Fixes
+
+* **composer:** update to php8.3 ([2c9af9a](https://github.com/dcplibrary/papiaccount/commit/2c9af9a5838a3aebc6f485bce0ab890ceb5bbbc8))
+
 ## [1.6.6](https://github.com/dcplibrary/papiaccount/compare/v1.6.5...v1.6.6) (2025-10-02)
 
 ### Bug Fixes
