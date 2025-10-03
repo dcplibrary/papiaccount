@@ -1,3 +1,9 @@
+## [1.6.14](https://github.com/dcplibrary/papiaccount/compare/v1.6.13...v1.6.14) (2025-10-03)
+
+### Bug Fixes
+
+* **phpstan:** clean up code ([1f61842](https://github.com/dcplibrary/papiaccount/commit/1f61842ef7ed4264711895d9cff14090767fa05e))
+
 ## [1.6.13](https://github.com/dcplibrary/papiaccount/compare/v1.6.12...v1.6.13) (2025-10-03)
 
 ### Bug Fixes
