@@ -1,3 +1,9 @@
+## [1.6.13](https://github.com/dcplibrary/papiaccount/compare/v1.6.12...v1.6.13) (2025-10-03)
+
+### Bug Fixes
+
+* **composer:** update ([1929640](https://github.com/dcplibrary/papiaccount/commit/192964046b5ba3a87f1ee5e4b4f2e3a2558504dd))
+
 ## [1.6.12](https://github.com/dcplibrary/papiaccount/compare/v1.6.11...v1.6.12) (2025-10-03)
 
 ### Bug Fixes
