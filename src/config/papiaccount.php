@@ -11,5 +11,5 @@ return [
     */
 
     'enabled' => env('PAPIACCOUNT_ENABLED', true),
-    'debug'   => env('PAPIACCOUNT_DEBUG', false),
+    'debug' => env('PAPIACCOUNT_DEBUG', false),
 ];

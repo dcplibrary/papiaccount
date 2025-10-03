@@ -14,10 +14,10 @@
          backupStaticProperties="false">
     <testsuites>
         <testsuite name="Unit">
-            <directory suffix="Test.php">./src/tests/Unit</directory>
+            <directory suffix="Test.php">./src/Tests/Unit</directory>
         </testsuite>
         <testsuite name="Feature">
-            <directory suffix="Test.php">./src/tests/Feature</directory>
+            <directory suffix="Test.php">./src/Tests/Feature</directory>
         </testsuite>
     </testsuites>
     <source>
@@ -25,7 +25,7 @@
             <directory suffix=".php">./src</directory>
         </include>
         <exclude>
-            <directory>./src/tests</directory>
+            <directory>./src/Tests</directory>
         </exclude>
     </source>
     <coverage>
@@ -37,3 +37,4 @@
     <logging>
         <junit outputFile="coverage/junit.xml"/>
     </logging>
+</phpunit>

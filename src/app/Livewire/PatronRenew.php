@@ -16,7 +16,7 @@ class PatronRenew extends Component
     public function save()
     {
         Patron::savePhoto($this->photo);
-        unset($this->photo);
+        $this->photo = null;
     }
 
     public function render()

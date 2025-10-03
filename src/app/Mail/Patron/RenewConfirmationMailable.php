@@ -12,6 +12,10 @@ class RenewConfirmationMailable extends Mailable
     use Queueable;
     use SerializesModels;
 
+    public function __construct(public string $filePath)
+    {
+    }
+
     /**
      * @return Envelope
      */
@@ -40,7 +44,7 @@ class RenewConfirmationMailable extends Mailable
     public function attachments(): array
     {
         return [
-
+            Attachment::fromPath($this->filePath),
         ];
     }
 }

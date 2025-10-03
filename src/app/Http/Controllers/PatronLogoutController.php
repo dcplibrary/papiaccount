@@ -2,7 +2,7 @@
 
 namespace Dcplibrary\PAPIAccount\App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
+use Illuminate\Routing\Controller;
 
 class PatronLogoutController extends Controller
 {

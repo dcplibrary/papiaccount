@@ -7,7 +7,7 @@ trait PatronAccountConcerns
     private function authenticate()
     {
         $json = [
-            'Barcode'  => $this->form->Barcode,
+            'Barcode' => $this->form->Barcode,
             'Password' => $this->form->Password,
         ];
 

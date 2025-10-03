@@ -70,10 +70,10 @@ class PAPIAccountServiceProvider extends ServiceProvider
         Livewire::component('patron.renew', PatronRenew::class);
 
         // Registering package commands.
-/*        $this->commands([
-            UpdatePatronCodes::class,
-            UpdatePatronUdfs::class,
-            // UpdatePatronStatCodes::class,
-        ]);*/
+        /*        $this->commands([
+                    UpdatePatronCodes::class,
+                    UpdatePatronUdfs::class,
+                    // UpdatePatronStatCodes::class,
+                ]);*/
     }
 }

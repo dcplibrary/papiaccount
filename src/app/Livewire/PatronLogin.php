@@ -3,10 +3,9 @@
 namespace Dcplibrary\PAPIAccount\App\Livewire;
 
 use Blashbrook\PAPIClient\PAPIClient;
+use Dcplibrary\PAPIAccount\App\Concerns\DateConcerns;
 use Dcplibrary\PAPIAccount\App\Concerns\PatronAccountConcerns;
 use Dcplibrary\PAPIAccount\App\Livewire\Forms\PatronForm;
-
-use Dcplibrary\PAPIAccount\App\Concerns\DateConcerns;
 use Illuminate\Contracts\View\View;
 use Livewire\Component;
 
@@ -23,6 +22,7 @@ class PatronLogin extends Component
 
     public function login()
     {
+        $patronBasicData = null;
         if ($this->authenticate()) {
             $patronBasicData = $this->getPatronBasicData();
         }

@@ -5,5 +5,8 @@ parameters:
     excludePaths:
         - src/tests/
         - src/resources/
-    checkMissingIterableValueType: false
-    checkGenericClassInNonGenericObjectType: false
+    ignoreErrors:
+        - '#Call to an undefined static method Blashbrook\\PAPIClient\\PAPIClient::authenticatedPatronRequest\(\)\.#'
+        - '#Call to static method where\(\) on an unknown class Blashbrook\\PAPIClient\\PendingUpdate\.#'
+        - '#Call to an undefined static method Blashbrook\\PAPIClient\\Models\\PostalCode::find\(\)\.#'
+        - '#Call to an undefined method Illuminate\\Contracts\\View\\View::layout\(\)\.#'

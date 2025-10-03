@@ -2,7 +2,7 @@
 
 namespace Dcplibrary\PAPIAccount\App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
+use Illuminate\Routing\Controller;
 use Blashbrook\PAPIClient\PAPIClient;
 use Dcplibrary\PAPIAccount\App\Livewire\Forms\PatronForm;
 use Dcplibrary\PAPIAccount\App\Mail\Patron\RenewConfirmationMailable;
