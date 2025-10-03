@@ -1,3 +1,9 @@
+## [1.6.16](https://github.com/dcplibrary/papiaccount/compare/v1.6.15...v1.6.16) (2025-10-03)
+
+### Bug Fixes
+
+* **viewconcerns:** remove $current definition ([d8732f7](https://github.com/dcplibrary/papiaccount/commit/d8732f7044f5543d3a4de4cae1014f9d890c344d))
+
 ## [1.6.15](https://github.com/dcplibrary/papiaccount/compare/v1.6.14...v1.6.15) (2025-10-03)
 
 ### Bug Fixes
