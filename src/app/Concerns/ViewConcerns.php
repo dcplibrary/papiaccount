@@ -6,7 +6,6 @@ use Dcplibrary\PAPIAccount\App\Http\Controllers\Patron;
 
 trait ViewConcerns
 {
-    public string $current = '';
 
     public function showInformation()
     {
