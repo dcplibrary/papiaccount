@@ -1,3 +1,10 @@
+## [1.6.15](https://github.com/dcplibrary/papiaccount/compare/v1.6.14...v1.6.15) (2025-10-03)
+
+### Bug Fixes
+
+* **composer:** delete lock ([9da6525](https://github.com/dcplibrary/papiaccount/commit/9da65258c08b3f75ccc70516afc1058ae36bf6c4))
+* **composer:** update ([0800888](https://github.com/dcplibrary/papiaccount/commit/08008888318842f8096c21f26a98e7f954f23bf7))
+
 ## [1.6.14](https://github.com/dcplibrary/papiaccount/compare/v1.6.13...v1.6.14) (2025-10-03)
 
 ### Bug Fixes
