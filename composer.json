@@ -14,12 +14,6 @@
     "account"
   ],
   "license": "MIT",
-  "require-dev": {
-    "barryvdh/laravel-debugbar": "^3.16",
-    "phpstan/phpstan": "^2.1",
-    "friendsofphp/php-cs-fixer": "^3.88",
-    "phpunit/phpunit": "^12.3"
-  },
   "authors": [
     {
       "name": "Brian Lashbrook",
