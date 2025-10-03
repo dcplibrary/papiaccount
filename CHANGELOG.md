@@ -1,3 +1,9 @@
+## [1.6.11](https://github.com/dcplibrary/papiaccount/compare/v1.6.10...v1.6.11) (2025-10-03)
+
+### Bug Fixes
+
+* **web:** update route/web ([0e85191](https://github.com/dcplibrary/papiaccount/commit/0e8519198a18ff59e7b91bc1c9bb0e97487fbc5e))
+
 ## [1.6.10](https://github.com/dcplibrary/papiaccount/compare/v1.6.9...v1.6.10) (2025-10-03)
 
 ### Bug Fixes
