@@ -2,8 +2,9 @@
   "name": "dcplibrary/papiaccount",
   "require": {
     "php": "^8.3",
-    "livewire/flux": "^v2.5.0",
-    "blashbrook/papiclient": "^2.4.5"
+    "illuminate/support": "^9.0||^10.0||^11.0||^12.0",
+    "blashbrook/papiclient": "dev-master",
+    "livewire/flux": "^2.5"
   },
   "type": "library",
   "description": "Laravel package for PAPIAccount",
@@ -29,7 +30,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Dcplibrary\\PAPIAccount\\Tests\\": "src/Tests/"
+      "Dcplibrary\\PAPIAccount\\Tests\\": "src/tests/"
     }
   },
   "extra": {
@@ -57,11 +58,14 @@
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
+  "repositories": {
+    "blashbrook/papiclient": {
+      "type": "path",
+      "url": "/Users/blashbrook/Sites/papidev-fresh/papiclient"
+    }
+  },
   "require-dev": {
-    "friendsofphp/php-cs-fixer": "^3.88",
-    "phpstan/phpstan": "^2.1",
     "larastan/larastan": "^3.7",
-    "orchestra/testbench": "^10.0",
-    "phpunit/phpunit": "^11.0"
+    "orchestra/testbench": "^10.6"
   }
 }
