@@ -3,7 +3,7 @@
   "require": {
     "php": "^8.3",
     "illuminate/support": "^9.0||^10.0||^11.0||^12.0",
-    "blashbrook/papiclient": "^v2.4.8",
+    "blashbrook/papiclient": "dev-master",
     "livewire/flux": "^2.5"
   },
   "type": "library",
@@ -58,6 +58,12 @@
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
+  "repositories": {
+    "blashbrook/papiclient": {
+      "type": "path",
+      "url": "/Users/blashbrook/Sites/papidev-fresh/papiclient"
+    }
+  },
   "require-dev": {
     "larastan/larastan": "^3.7",
     "orchestra/testbench": "^10.6"
