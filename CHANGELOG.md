@@ -1,3 +1,9 @@
+## [1.7.0](https://github.com/dcplibrary/papiaccount/compare/v1.6.17...v1.7.0) (2025-10-04)
+
+### Features
+
+* **composer:** update ([aa4ca23](https://github.com/dcplibrary/papiaccount/commit/aa4ca23df964bb87f2406505259715b3650327a0))
+
 ## [1.6.17](https://github.com/dcplibrary/papiaccount/compare/v1.6.16...v1.6.17) (2025-10-04)
 
 ### Bug Fixes
