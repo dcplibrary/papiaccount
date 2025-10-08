@@ -4,15 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "81cf9b2f1fde7867fedb000ee9b6ca06",
+    "content-hash": "90c11c06f232c1c20d54bf4d8479dc33",
     "packages": [
         {
             "name": "blashbrook/papiclient",
-            "version": "dev-master",
-            "dist": {
-                "type": "path",
-                "url": "/Users/blashbrook/Sites/papidev-fresh/papiclient",
+            "version": "v2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/blashbrook/papiclient.git",
                 "reference": "93b883c0940d54af85eff8236f154b795b8232f9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/blashbrook/papiclient/zipball/93b883c0940d54af85eff8236f154b795b8232f9",
+                "reference": "93b883c0940d54af85eff8236f154b795b8232f9",
+                "shasum": ""
             },
             "require": {
                 "illuminate/database": "^v12.32.5",
@@ -24,12 +30,12 @@
             "type": "library",
             "extra": {
                 "laravel": {
-                    "providers": [
-                        "Blashbrook\\PAPIClient\\Providers\\PAPIClientServiceProvider"
-                    ],
                     "aliases": {
                         "PAPIClient": "Blashbrook\\PAPIClient\\PAPIClient"
-                    }
+                    },
+                    "providers": [
+                        "Blashbrook\\PAPIClient\\Providers\\PAPIClientServiceProvider"
+                    ]
                 }
             },
             "autoload": {
@@ -38,11 +44,12 @@
                 ],
                 "psr-4": {
                     "Blashbrook\\PAPIClient\\": "src/",
-                    "Blashbrook\\PAPIClient\\Database\\Migrations\\": "src/database/Migrations/",
+                    "Blashbrook\\PAPIClient\\Tests\\": "src/tests/",
                     "Blashbrook\\PAPIClient\\Database\\Seeders\\": "src/database/Seeders/",
-                    "Blashbrook\\PAPIClient\\Tests\\": "src/tests/"
+                    "Blashbrook\\PAPIClient\\Database\\Migrations\\": "src/database/Migrations/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -56,15 +63,17 @@
             "description": "Provides Client for Polaris ILS API",
             "homepage": "https://github.com/blashbrook/papiclient",
             "keywords": [
-                "API",
-                "Laravel",
                 "PAPI",
                 "PAPIClient",
-                "Polaris"
+                "api",
+                "laravel",
+                "polaris"
             ],
-            "transport-options": {
-                "relative": false
-            }
+            "support": {
+                "issues": "https://github.com/blashbrook/papiclient/issues",
+                "source": "https://github.com/blashbrook/papiclient/tree/v2.5.0"
+            },
+            "time": "2025-10-04T04:11:00+00:00"
         },
         {
             "name": "brick/math",
@@ -1115,16 +1124,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v12.32.5",
+            "version": "v12.33.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "77b2740391cd2a825ba59d6fada45e9b8b9bcc5a"
+                "reference": "124efc5f09d4668a4dc13f94a1018c524a58bcb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/77b2740391cd2a825ba59d6fada45e9b8b9bcc5a",
-                "reference": "77b2740391cd2a825ba59d6fada45e9b8b9bcc5a",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/124efc5f09d4668a4dc13f94a1018c524a58bcb1",
+                "reference": "124efc5f09d4668a4dc13f94a1018c524a58bcb1",
                 "shasum": ""
             },
             "require": {
@@ -1330,7 +1339,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-09-30T17:39:22+00:00"
+            "time": "2025-10-07T14:30:39+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -2005,7 +2014,7 @@
         },
         {
             "name": "livewire/flux",
-            "version": "v2.5.0",
+            "version": "v2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/flux.git",
@@ -2065,7 +2074,7 @@
             ],
             "support": {
                 "issues": "https://github.com/livewire/flux/issues",
-                "source": "https://github.com/livewire/flux/tree/v2.5.0"
+                "source": "https://github.com/livewire/flux/tree/v2.5.1"
             },
             "time": "2025-09-29T21:36:00+00:00"
         },
@@ -9041,9 +9050,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "blashbrook/papiclient": 20
-    },
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
